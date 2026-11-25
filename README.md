@@ -76,6 +76,16 @@ icon*.png          Toolbar icons
 tests/test.mjs     Automated tests
 ```
 
+## ☕ Support the Project
+
+PDFHunter is free to use.
+
+If this extension helped you, consider buying me a coffee
+to support its development!
+
+[☕ Buy me a coffee](https://ko-fi.com/tobioc45595)
+All donations are optional. Thank you for your support!
+
 ## License
 
 No license has been selected yet. Public repository visibility alone does not grant reuse rights. The maintainer can add an open-source license later.
