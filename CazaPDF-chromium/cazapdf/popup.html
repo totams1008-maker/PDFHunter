@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CazaPDF</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="head">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 28 28" fill="none">
+            <path d="M8 3.5h9l5 5V24H8a2 2 0 0 1-2-2V5.5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M17 4v5h5M14 12v8m0 0-3-3m3 3 3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1>CazaPDF</h1>
+          <p>The full PDF, without copying page by page.</p>
+        </div>
+      </header>
+
+      <section class="site" aria-label="Current tab">
+        <div class="site-dot" aria-hidden="true"></div>
+        <div class="site-info">
+          <span class="micro-label">CURRENT TAB</span>
+          <strong id="site-name">Detecting page…</strong>
+        </div>
+      </section>
+
+      <section class="results" aria-live="polite">
+        <div class="results-top">
+          <h2>PDFs found</h2>
+          <span class="counter" id="result-count">—</span>
+        </div>
+        <div id="status" class="status">Looking for loaded PDFs…</div>
+        <div id="documents" class="documents" hidden></div>
+      </section>
+
+      <button id="rescan" type="button" class="rescan">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 11a8 8 0 1 0-2.3 6M20 4v7h-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Scan again
+      </button>
+
+      <div class="hint" id="hint">
+        <span aria-hidden="true">✦</span>
+        Nothing found? Reload the document in your browser, then open CazaPDF again.
+      </div>
+      <footer>Only accesses this tab when you click the extension.</footer>
+    </main>
+    <script type="module" src="popup.mjs"></script>
+  </body>
+</html>
